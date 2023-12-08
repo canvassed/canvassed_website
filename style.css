@@ -1,0 +1,69 @@
+html {  
+    scroll-behavior: smooth; 
+ 
+}
+
+nav {
+    padding: 10px;
+    margin-top: 4px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+nav li{
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+}
+
+nav button{
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#socials_div ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+#main{
+    padding-top:40px;
+}
+
+.main_div{
+    background-color: green;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_column, .right_column{
+    width:50%;
+}
+
+.left_column{
+    text-align: center;
+}
+
+.column_info{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#what_is_button{
+    background-color: #a46dbd;
+}
+
+#create_account_form{
+    display: none;
+    background-color: green;
+}
