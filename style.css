@@ -35,11 +35,11 @@ nav button{
 
 #main{
     padding-top:40px;
+    font-size: 20px;
 }
 
 .main_div{
-    background-color: green;
-    height: 500px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,6 +51,18 @@ nav button{
 
 .left_column{
     text-align: center;
+    height: 100%;
+    border-right: 1px dashed lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_column{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .column_info{
@@ -65,5 +77,69 @@ nav button{
 
 #create_account_form{
     display: none;
-    background-color: green;
+}
+
+input{
+    background-color: lightgrey;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.form_button{
+    padding: 5px;
+    background-color: #a46dbd;
+    border: none;
+    border-radius: 8px;
+}
+
+#login_form, #create_account_form{
+    background-color: black;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#login_form input, #create_account_form input{
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#login_form button, #create_account_form button{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#login_form button:hover, #create_account_form button:hover{
+    background-color: #7e5491;
+}
+
+h1{
+    color: #2d0440;
+}
+
+#account_info_div, #extra_account_info_div{
+    background-color: black;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 30px;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .main_div{
+        height: 700px;
+        display: block;
+    }
+    
+    .left_column, .right_column{
+        width:100%;
+    }
 }

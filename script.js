@@ -1,5 +1,11 @@
 function openSignUp(){
     document.getElementById("create_account_form").style.display = "block";
+    document.getElementById("login_form").style.display = "none";
+}
+
+function openLogin(){
+    document.getElementById("create_account_form").style.display = "none";
+    document.getElementById("login_form").style.display = "block";
 }
 
 function switchNavButtonColor(button_id){
