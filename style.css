@@ -31,6 +31,7 @@ nav button{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding: 0;
 }
 
 #main{
@@ -50,7 +51,7 @@ nav button{
 }
 
 .left_column{
-    text-align: center;
+    text-align: left;
     height: 100%;
     border-right: 1px dashed lightgray;
     display: flex;
@@ -75,7 +76,7 @@ nav button{
     background-color: #a46dbd;
 }
 
-#create_account_form{
+#login_form{
     display: none;
 }
 
@@ -99,7 +100,7 @@ input{
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 8px;
-    width: 400px;
+    width: 250px;
     box-shadow: 5px 5px 5px black;
 }
 
@@ -127,19 +128,58 @@ h1{
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 8px;
-    width: 400px;
+    width: 250px;
     box-shadow: 5px 5px 5px black;
     margin-bottom: 30px;
     color: white;
 }
 
+#socials_div li a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
 @media only screen and (max-width: 800px) {
     .main_div{
-        height: 700px;
+        height: 500px;
+        margin-bottom: 500px;
         display: block;
     }
     
     .left_column, .right_column{
         width:100%;
+        border: none;
     }
+
+    .column_info{
+        width: 250px;
+
+    }
+
+    #contact_div{
+        margin-bottom: 600px;
+    }
+
+    #socials_div ul{
+        display: block;
+        text-align: center;
+        
+    }
+    #socials_div li{
+        margin-bottom: 10px;
+    }
+
+    #title{
+        display: none;
+    }
+}
+
+
+
+
+
+
+#sign_up_div, #account_div{
+    display: none;
 }

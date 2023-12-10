@@ -24,10 +24,12 @@ $userbio = "test";
     </head>
     <body>
         <nav>
-            <li>canvassed</li>
+            <li id="title">canvassed</li>
             <li><a href="#what_is_div"><button id="what_is_button" class="nav_buttons" onclick="switchNavButtonColor('what_is_button')">what is canvassed</button></a></li>
+            <!--
             <li><a href="#sign_up_div"><button id="sign_up_button" class="nav_buttons" onclick="switchNavButtonColor('sign_up_button')">sign up</button></a></li>
             <li><a href="#account_div"><button id="account_button" class="nav_buttons" onclick="switchNavButtonColor('account_button')">account</button></a></li>
+-->
             <li><a href="#contact_div"><button id="contact_button" class="nav_buttons" onclick="switchNavButtonColor('contact_button')">contact us</button></a></li>
             <li><a href="#socials_div"><button id="socials_button" class="nav_buttons" onclick="switchNavButtonColor('socials_button')">social media accounts</button></a></li>
         </nav>
@@ -55,14 +57,15 @@ $userbio = "test";
                 </div>
                 <div class="right_column">
                     <div id="login_form">
-                        <form>
+                        <form action="backend/loginCheck.php" method="POST">
                             <input placeholder="email">
                             <input placeholder="password">
                             <button class="form_button">login</button>
                         </form>
+                        <p><?php echo $_GET['response']; ?></p>
                     </div>
                     <div id="create_account_form">
-                        <form>
+                        <form action="" method="POST">
                             <input placeholder="email">
                             <button class="form_button">send confirmation email</button>
                             <input placeholder="user name">
@@ -71,6 +74,7 @@ $userbio = "test";
                             <input placeholder="email confirmation code">
                             <button class="form_button">sign up</button>
                         </form>
+                        <p><?php echo $_GET['response']; ?></p>
                     </div>
                 </div>
                 
@@ -80,7 +84,7 @@ $userbio = "test";
                 <div class="left_column">
                     <div class="inner_colomn_container">
                         <h1>your account</h1>
-                        <p>manage your account from here or the app</p>
+                        <p>manage your account from here or in the app</p>
                     </div>
                 </div>
                 <div class="right_column">
@@ -112,13 +116,11 @@ $userbio = "test";
                 </div>
                 
             </div>
-            <div id="socials_div" class="main_div">
-                <p>follow us on our social media accounts</p>
+            <div id="socials_div">
                 <ul>
-                    <li>canvassed</li>
-                    <li>instagram</li>
-                    <li>youtube</li>
-                    <li>tiktok</li>
+                    <li><a href="https://www.instagram.com/the_canvassed/?utm_source=ig_embed&amp;utm_campaign=loading">instagram</a></li>
+                    <li><a href="https://youtube.com/@the_canvassed?si=ejq2yDieO3bqW1gU">youtube</a></li>
+                    <li><a href="https://www.tiktok.com/@the_canvassed?is_from_webapp=1&sender_device=pc">tiktok</a></li>
                 </ul>
             </div>
             
